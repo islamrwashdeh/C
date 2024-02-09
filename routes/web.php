@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/hello',function(){
-    return 'first hello larave ';
+    return view('firstView');
 });
 
