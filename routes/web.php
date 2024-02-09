@@ -18,6 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/hello',function(){
-    return view('firstView');
+    $name ='salma';
+    $val =5;
+    return view('firstView')->with('renderdName',$name)->with('value',$val);
 });
 
