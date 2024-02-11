@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Booking;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,7 @@ Route::get('/hello',function(){
     return view('firstView')->with('renderdName',$name)->with('value',$val);
 });
 
+
+Route::get('/myBookings',Booking::class . '@myBookings');
+
+Route::get('/sayHi/{name}',Booking::class .'@sayHi');
