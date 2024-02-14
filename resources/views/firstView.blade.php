@@ -6,7 +6,7 @@
     <body >
         @if ($value > 20 )
         <dev style="background-color: brown">
-            <h2>brown </h2>
+            <h2>brown    </h2>
         </dev>
         @else 
      
